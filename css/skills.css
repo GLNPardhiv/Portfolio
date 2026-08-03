@@ -1,0 +1,93 @@
+/* ===================================================
+   SKILLS.CSS
+   Styles only for the #skills section.
+   =================================================== */
+
+.skills-group-title {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+/* first group title should not have extra top gap */
+.skills-section .skills-group-title:first-of-type {
+  margin-top: 0;
+}
+
+/* Grid of skill icon boxes (HTML5, CSS3, JavaScript...) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px 10px;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+}
+
+.skill-box:hover {
+  border-color: var(--accent-color);
+}
+
+/* Skill percentage bars, in 2 columns */
+.skillbars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 60px;
+  margin-top: 20px;
+}
+
+.skillbar {
+  margin-bottom: 20px;
+}
+
+.skillbar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.skillbar-track {
+  width: 100%;
+  height: 8px;
+  background-color: var(--card-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skillbar-fill {
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.skill-img {
+  width: 90px;
+  height: 90px;
+  mix-blend-mode: screen; 
+}
+
+/* Smaller screens: fewer skill-box columns, 1 column of bars */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skillbars {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <!-- Each section of the page has its own CSS file. -->
+  <!-- This makes it easy to find and edit styles for one section only. -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <!-- This navbar stays fixed at the top of every section. -->
+  <!-- The links use "#id" to jump to the section with that id. -->
+  <nav class="navbar">
+    <div class="logo">Pardhiv LN Guntaka</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="about-section">
+    <h1 class="section-title">About Me</h1>
+    <p class="section-subtitle">Get to know me better</p>
+
+
+    <div class="about-container">
+      <div class="about-left">
+        <p class="about-text">
+          I'm a Computer Science undergraduate with a strong interest in Full Stack Development, Backend Engineering, and System Design, with a growing focus on AI-powered application backends. I enjoy building scalable web applications that solve real-world problems while focusing on clean architecture, security, and performance.
+        </p>
+        <p class="about-text">
+          My primary tech stack is the MERN Stack (MongoDB, Express.js, React, and Node.js), and I enjoy exploring backend technologies, authentication systems, REST APIs, databases, and cloud deployment. Alongside traditional web development, I actively work with Retrieval-Augmented Generation (RAG) pipelines, LLM integrations, and vector databases—often using Python to build intelligent services that complement my full-stack foundations.
+        </p>
+      </div>
+
+      <div class="about-right">
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="name-img-container">
+                <img class="name-img" src="css/60ca3dc1a843a0ba2248ff89b67c5e99.jpg"></img>
+                <img class="name-img" src="css/HD-wallpaper-neon-purple-neon-dot-circle-purple-thumbnail.jpg"></img>
+            </div>
+            <div class="name-div">
+                <span class="info-label">Name</span>
+                <span class="info-value">Pardhiv LN Guntaka</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="name-img-container">
+                <img class="name-img" src="css/fa0fc5b5f9c4c8e8c9dcfc8c56940f65.jpg"></img>
+                <img class="name-img" src="css/HD-wallpaper-neon-purple-neon-dot-circle-purple-thumbnail.jpg"></img>
+            </div>
+            <div class="name-div">
+                <span class="info-label">Location</span>
+                <span class="info-value">India</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="name-img-container">
+                <img class="name-img" src="css/3bc782748deaf3a6b532bc923320e8f5.jpg"></img>
+                <img class="name-img" src="css/HD-wallpaper-neon-purple-neon-dot-circle-purple-thumbnail.jpg"></img>
+            </div>
+            <div class="name-div">
+                <span class="info-label">Email</span>
+                <span class="info-value">hello@portfolio.dev</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="name-img-container">
+                <img class="name-img" src="css/neon-handshake-icon-on-black-260nw-2722991129.jpg"></img>
+                <img class="name-img" src="css/HD-wallpaper-neon-purple-neon-dot-circle-purple-thumbnail.jpg"></img>
+            </div>
+            <div class="name-div">
+                <span class="info-label">Working Status</span>
+                <span class="info-value">Open to Work</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="name-img-container">
+                <span class="name-img info-emoji" aria-hidden="true">🎓</span>
+                <img class="name-img" src="css/HD-wallpaper-neon-purple-neon-dot-circle-purple-thumbnail.jpg"></img>
+            </div>
+            <div class="name-div">
+                <span class="info-label">College</span>
+                <span class="info-value">NIT Warangal</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="name-img-container">
+                <span class="name-img info-emoji" aria-hidden="true">📈</span>
+                <img class="name-img" src="css/HD-wallpaper-neon-purple-neon-dot-circle-purple-thumbnail.jpg"></img>
+            </div>
+            <div class="name-div">
+                <span class="info-label">CGPA</span>
+                <span class="info-value">8.28</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="download-div">
+        <a href="css/24CSB0B24_GLNPardhiv.pdf" class="btn-download">Download Resume</a>
+    </div>
+
+    <!-- Stats row: number + label, full section width below the resume button -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <h3>10+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-box">
+        <h3>2+</h3>
+        <p>Months Experience (Open Source)</p>
+      </div>
+      <div class="stat-box">
+        <h3>1000+</h3>
+        <p>Problems Solved</p>
+      </div>
+      <div class="stat-box">
+        <h3>2+</h3>
+        <p>Certifications</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="projects-section">
+    <h1 class="section-title">My Projects</h1>
+    <p class="section-subtitle">Things I've built so far</p>
+
+    <!-- Filter buttons (just for looks, no JS filtering) -->
+    <div class="filter-buttons">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Web Apps</button>
+      <button class="filter-btn">Full Stack</button>
+      <button class="filter-btn">Tools</button>
+    </div>
+
+    <!-- Grid of project cards -->
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <!-- <div class="project-image"></div> -->
+        <span class="project-tag">Full Stack</span>
+        <h3>SkillLink Marketplace</h3>
+        <p>SkillLink Marketplace is an end-to-end freelancing platform where clients post project briefs and independent professionals submit competitive, milestone-based bids. The platform secures all transactions through a tripartite escrow system, releasing funds to freelancers only after client approval. Integrated real-time messaging and file-sharing suites ensure seamless, secure collaboration.</p>
+        <div class="project-links">
+          <!-- <a href="#">Live Demo &rarr;</a> -->
+          <a href="https://github.com/GLNPardhiv/SkillLink_OOPs_Project" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <!-- <div class="project-image"></div> -->
+        <span class="project-tag">Open Source Contribution</span>
+        <h3>RAG Chatbot</h3>
+        <p>We built a grounded RAG chatbot that answers user questions exclusively from uploaded customer reviews, using a multi-stage retrieval pipeline with sentiment-based filtering, query expansion, cross-encoder re-ranking, and MMR for relevance and diversity. It features a FastAPI backend with ChromaDB, session-based conversation memory, and seamless Streamlit integration—delivering hallucination-free, context-aware responses without relying on external knowledge.
+        </p>
+        <div class="project-links">
+          <!-- <a href="#">Live Demo &rarr;</a> -->
+          <a href="https://github.com/GLNPardhiv/BizInsight-AI" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <!-- <div class="project-image"></div> -->
+        <span class="project-tag">Web App</span>
+        <h3>Private Drop</h3>
+        <p>AES‑256 file encryption tool with client‑side cryptography – your data never leaves your device unencrypted.
+        It supports streaming encryption/decryption of large files via Web Workers for fast, memory‑efficient processing.
+        Share encrypted files securely via zero‑knowledge links – the server never sees your keys or plaintext data.</p>
+        <div class="project-links">
+          <!-- <a href="#">Live Demo &rarr;</a> -->
+          <a href="https://github.com/GLNPardhiv/PrivateDrop" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <!-- <div class="project-image"></div> -->
+        <span class="project-tag">Web App</span>
+        <h3>Defense OS</h3>
+        <p>An AI-Assisted Secure Sandbox Compiler. This enterprise-grade platform provides a novel hybrid security model for executing untrusted C++ code. It combines native Linux kernel isolation (seccomp-bpf, namespaces) with an LLM-powered AI agent that analyzes semantic intent and translates opaque system signals into actionable developer feedback. The project integrates a C++ orchestration core, a Node.js gateway, and a React telemetry dashboard.</p>
+        <div class="project-links">
+          <!-- <a href="#">Live Demo &rarr;</a> -->
+          <a href="https://github.com/GLNPardhiv/Secure_Sandbox_Compiler" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <!-- <div class="project-image"></div> -->
+        <span class="project-tag">Open Source Contribution</span>
+        <h3>Auto Cluster</h3>
+        <p>Built a smart complaint clustering module that automatically groups similar negative reviews using BERTopic with HDBSCAN and UMAP, powered by Sentence Transformers for deep semantic understanding. After uploading a CSV, users simply click a button to generate complaint clusters, with each cluster displaying the number and percentage of negative reviews, along with sample review excerpts for quick insight—eliminating manual tagging and revealing recurring issues at a glance.</p>
+        <div class="project-links">
+          <!-- <a href="#">Live Demo &rarr;</a> -->
+          <a href="https://github.com/GLNPardhiv/BizInsight-AI" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <!-- <div class="project-image"></div> -->
+        <span class="project-tag">Full Stack</span>
+        <h3>Lumin AI</h3>
+        <p>Lumin.ai is an AI-powered screening platform that uses a real-time conversational avatar to conduct dynamic technical interviews. It evaluates candidates across confidence, communication, and semantic accuracy, while automatically generating comprehensive hiring reports. Built with FastAPI, React, and OpenCV, it uniquely enforces integrity by instantly detecting and blocking duplicate attempts using facial vector matching—making remote screening fair, scalable, and secure.</p>
+        <div class="project-links">
+          <!-- <a href="#">Live Demo &rarr;</a> -->
+          <a href="https://github.com/pkreddy07/LuminAI" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="https://github.com/GLNPardhiv" target="_blank" rel="noopener noreferrer" class="btn-more">View More Projects</a>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section id="skills" class="skills-section">
+    <h1 class="section-title">My Skills</h1>
+    <p class="section-subtitle">Technologies and tools I work with</p>
+
+    <!-- Frontend skills -->
+    <h3 class="skills-group-title">Frontend</h3>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <img src="css/images (1).jpg" class="skill-img" alt="HTML5 Logo">
+        <span>HTML5</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (2).jpg" class="skill-img" alt="CSS3 Logo">
+        <span>CSS3</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (3).jpg" class="skill-img" alt="JavaScript Logo">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (4).jpg" class="skill-img" alt="React Logo">
+        <span>React</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (5).jpg" class="skill-img" alt="Tailwind CSS Logo">
+        <span>Tailwind CSS</span>
+      </div>
+    </div>
+
+    <!-- Backend skills -->
+    <h3 class="skills-group-title">Backend</h3>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <img src="css/images (7).jpg" class="skill-img" alt="Node.js Logo">
+        <span>Node.js</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (8).jpg" class="skill-img" alt="Express.js Logo">
+        <span>Express.js</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (11).jpg" class="skill-img" alt="MongoDB Logo">
+        <span>MongoDB</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (13).jpg" class="skill-img" alt="REST API Logo">
+        <span>REST API</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images.png" class="skill-img" alt="Socket.io Logo">
+        <span>Socket.io</span>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <h3 class="skills-group-title">Tools &amp; Others</h3>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <img src="css/Git-Icon-White.png" class="skill-img" alt="Git Logo">
+        <span>Git</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (1).png" class="skill-img" alt="GitHub Logo">
+        <span>GitHub</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (2).png" class="skill-img" alt="Docker Logo">
+        <span>Docker</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/images (14).jpg" class="skill-img" alt="VS Code Logo">
+        <span>VS Code</span>
+      </div>
+      <div class="skill-box">
+        <img src="css/postman-dark.png" class="skill-img" alt="Postman Logo">
+        <span>Postman</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="contact-section">
+    <h1 class="section-title">Let's Get In Touch</h1>
+    <p class="section-subtitle">Have a project in mind or want to say hello? Feel free to reach out!</p>
+
+    <div class="contact-content">
+
+      <!-- Left side: contact info -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hello@portfolio.dev</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 98765 43210</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">India</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Availability</span>
+          <span class="contact-value">Open to work</span>
+        </div>
+      </div>
+
+      <!-- Right side: contact form -->
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+        </div>
+        <input type="text" placeholder="Subject" class="form-full">
+        <textarea placeholder="Message" rows="5" class="form-full"></textarea>
+        <button type="submit" class="btn-send">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h3>Portfolio</h3>
+        <p>Building digital experiences and solving problems through code. Always learning, always growing.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">Web Development</a>
+        <a href="#">Full Stack Development</a>
+        <a href="#">AI/ML Development</a>
+        <a href="#">API Development</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Let's Connect</h4>
+        <p>Interested in working together? Let's build something amazing.</p>
+        <a href="#contact" class="btn-start">Start a Project</a>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">&copy; 2026 Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
