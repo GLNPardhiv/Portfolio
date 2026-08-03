@@ -31,10 +31,13 @@
   align-items: center;
   gap: 10px;
   font-size: 17px;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
 }
 
 .skill-box:hover {
   border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px -12px rgba(124, 92, 255, 0.55);
 }
 
 /* Skill percentage bars, in 2 columns */

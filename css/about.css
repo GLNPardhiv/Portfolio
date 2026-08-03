@@ -46,10 +46,13 @@
   padding: 15px;
   display: flex;
   flex-direction: row;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
 }
 
 .info-card:hover {
   border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px -12px rgba(124, 92, 255, 0.6);
 }
 
 .info-label {
@@ -77,15 +80,20 @@
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
 }
 
-/* The resume link currently has no real file behind it (no PDF asset),
-   so the button is intentionally left as a placeholder. The hover fills
-   the interior so users see it respond, but the click is a no-op. */
 .btn-download:hover,
 .btn-download:focus-visible {
   background-color: var(--accent-color);
+  color: var(--text-color);
   outline: none;
+  transform: translateY(-2px);
+}
+
+.btn-download:active {
+  transform: translateY(0);
+  transition-duration: 80ms;
 }
 
 .name-img-container {
@@ -125,10 +133,13 @@
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 25px 10px;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
 }
 
 .stat-box:hover {
   border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px -12px rgba(124, 92, 255, 0.6);
 }
 
 .stat-box h3 {

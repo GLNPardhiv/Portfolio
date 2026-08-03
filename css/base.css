@@ -23,6 +23,9 @@ Change these once here and the whole site updates.
   /* Navbar height — also used by sections to offset their top padding
      and by scroll-padding so anchor links land below the navbar. */
   --navbar-height: 70px;
+  /* Extra breathing room above the section title when an anchor link scrolls
+     it into view. Kept small so the title doesn't appear oddly low. */
+  --scroll-offset: 10px;
 }
 
 /* Reset: remove default browser spacing so we control everything */
@@ -35,8 +38,10 @@ Change these once here and the whole site updates.
 html {
   /* Smooth-scroll for in-page anchor links. */
   scroll-behavior: smooth;
-  /* Anchor jumps land below the fixed navbar instead of being hidden under it. */
-  scroll-padding-top: var(--navbar-height);
+  /* Anchor jumps land below the fixed navbar instead of being hidden under it.
+     navbar height + a small gap, so the title sits just below the navbar
+     rather than nearly a viewport-height into the section. */
+  scroll-padding-top: calc(var(--navbar-height) + var(--scroll-offset));
 }
 
 body {
@@ -68,7 +73,7 @@ section {
   margin: 0 auto;
   /* Belt-and-braces: even if scroll-padding is overridden, anchor links
      land below the navbar rather than underneath it. */
-  scroll-margin-top: var(--navbar-height);
+  scroll-margin-top: calc(var(--navbar-height) + var(--scroll-offset));
 }
 
 /* Title shrinks on smaller screens so it doesn't dominate the viewport. */

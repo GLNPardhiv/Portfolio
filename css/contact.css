@@ -24,10 +24,13 @@
   padding: 15px 20px;
   display: flex;
   flex-direction: column;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
 }
 
 .contact-item:hover {
   border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px -12px rgba(124, 92, 255, 0.55);
 }
 
 .contact-label {
@@ -94,12 +97,14 @@
   padding: 12px 24px;
   border-radius: 30px;
   cursor: pointer;
+  transition: background-color 200ms ease, transform 200ms ease;
 }
 
 .btn-send:hover,
 .btn-send:focus-visible {
   background-color: var(--accent-color-2);
   outline: none;
+  transform: translateY(-2px);
 }
 
 /* Stack contact info and form on small screens */

@@ -19,11 +19,14 @@
   padding: 8px 20px;
   border-radius: 20px;
   cursor: pointer;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
 }
 
 .filter-btn:hover {
+  background-color: var(--accent-color);
   border-color: var(--accent-color);
-  color: var(--accent-color);
+  color: var(--text-color);
+  transform: translateY(-2px);
 }
 
 .filter-btn.active {
@@ -48,10 +51,13 @@
   border-radius: 14px;
   padding: 15px;
   align-items: flex-start;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
 }
 
 .project-card:hover {
   border-color: var(--accent-color);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -14px rgba(124, 92, 255, 0.55);
 }
 
 /* Placeholder image area on top of each card */
@@ -96,10 +102,12 @@
   text-decoration: none;
   font-size: 14px;
   display: inline-block;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
 .project-links a:hover {
   color: var(--accent-color);
+  transform: translateX(4px);
 }
 
 /* "View More Projects" link, centered under the grid.
@@ -116,13 +124,16 @@
   text-decoration: none;
   text-align: center;
   width: max-content;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
 }
 
 .btn-more:hover,
 .btn-more:focus-visible {
+  background-color: var(--accent-color);
   border-color: var(--accent-color);
-  color: var(--accent-color);
+  color: var(--text-color);
   outline: none;
+  transform: translateY(-2px);
 }
 
 /* Fewer columns on smaller screens */
